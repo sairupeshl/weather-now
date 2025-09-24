@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L. Sai Rupesh | Weather Now</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Add portfoilio website link once done -->
+  <!-- <button class="floating-button"><a href="">My Portfolio Website</a></button> -->
+
+  <main class="total-container">
+    <h1>Weather Now | L. Sai Rupesh</h1>
+    <section class="search">
+      <input type="text" id="cityname" placeholder="City name" onkeydown="if(event.key === 'Enter') getWeather()">
+      <button onclick="getWeather()">Get Weather</button>
+    </section>
+
+    <section class="weather-box" id="result-box">
+      <div class="loading-class" id="loading">
+        <p>Enter a city to get the weather!</p>
+      </div>
+      <div class="weather-data" id="weatherData">
+        <article id="currentWeather" class="current-weather"></article>
+        <section id="weatherDetails" class="weather-details"></section>
+      </div>
+    </section>
+    
+    <section class="forecast-section" id="forecastSection" style="display: none;">
+      <h2>5-Day Temperature Forecast</h2>
+      <canvas id="forecastChart"></canvas>
+    </section>
+  </main>
+  
+  <script src="main.js"></script>
+
+</body>
+</html>
