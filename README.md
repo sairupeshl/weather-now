@@ -37,7 +37,7 @@ A simple weather web app where you can enter any city and instantly see the curr
 Clone the repo and run locally:
 
 <pre>```bash
-git clone https://github.com/lsairupesh/weather-now.git
+git clone https://github.com/sairupeshl/weather-now.git
 cd weather-now
 npm install
 npm start```</pre>
